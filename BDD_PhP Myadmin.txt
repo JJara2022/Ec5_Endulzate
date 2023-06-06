@@ -1,0 +1,20 @@
+Instalar el XAMPP y activar el scrach y el sql
+
+luego de ello entrar a la pag de php myadmin por medio del xampp a traves del boton "admin" de SQL
+
+para finalizar  copiar el siguiente codigo en la base de datos sql del phpmyadmin
+
+-----------------------------------------------
+
+
+create database test1;
+
+use test1;
+
+DROP TABLE IF EXISTS `login`;
+CREATE TABLE IF NOT EXISTS 
+`login` (
+`Usuario` varchar(20) NOT NULL,
+`Password` varchar(20) NOT NULL,
+)
+INSERT INTO `login` (`Usuario`, `Password`) VALUES ('Andre', 'ucss01'), ('Jaime ', 'ucss02'), ('Ricardo', 'ucss03');
